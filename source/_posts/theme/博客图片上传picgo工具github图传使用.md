@@ -2,7 +2,7 @@
 title: 博客图片上传picgo工具github图传使用
 toc: true
 keywords: java
-thumbnail: 'https://cdn.jsdelivr.net/gh/removeif/blog_image/20190620173650.png'
+# thumbnail: 'https://cdn.jsdelivr.net/gh/removeif/blog_image/20190620173650.png'
 tags: 工具教程
 categories:
   - 工具教程

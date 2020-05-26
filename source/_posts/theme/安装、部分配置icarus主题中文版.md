@@ -5,7 +5,7 @@ categories:
   - 主题工具
 toc: true
 keywords: java
-thumbnail: 'https://blog.zhangruipeng.me/hexo-theme-icarus/gallery/preview.png'
+# thumbnail: 'https://blog.zhangruipeng.me/hexo-theme-icarus/gallery/preview.png'
 tags:
   - icarus主题配置
   - hexo主题

@@ -13,7 +13,7 @@ head:
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: Remzing
+        title: Remzing`s blog
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
         type: blog
