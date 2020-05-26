@@ -5,15 +5,15 @@
 # Site
 title: Remzing
 subtitle: codeing
-description: 生活坏到一定程度就会好起来，因为它无法更坏
-keywords: java,elasticsearch,设计模式,sql
+description: 受尽苦难而不厌，此乃修罗之道
+keywords: javascript,node,设计模式,sql
 author: Remzing
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://removeif.github.io
+url: https://remzing.github.io
 #root: /remove.io/
 root: /
 # 可选 permalink: abbrlink 短链接模式
