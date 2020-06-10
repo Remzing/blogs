@@ -1,5 +1,5 @@
 const { Component } = require('inferno');
-const { cacheComponent } = require('../util/cache');
+const { cacheComponent } = require('hexo-component-inferno/lib/util/cache');
 
 class Footer extends Component {
     render() {
@@ -12,31 +12,23 @@ class Footer extends Component {
             author,
             links,
             showVisitorCounter,
-            visitorCounterTitle,
-            url_for
+            visitorCounterTitle
         } = this.props;
 
         return <footer class="footer">
             <div class="container">
                 <div class="level">
                     <div class="level-start">
-                        <a class="footer-logo is-block mb-2" href={siteUrl}>
+                        {/* <a class="footer-logo is-block mb-2" href={siteUrl}>
                             {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="28" />}
-                        </a>
+                        </a> */}
                         <p class="size-small">
                             <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
-                                href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/removeif" target="_blank">removeif</a>&nbsp;
-                            <br />
-                            &copy; 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href={url_for('/message')} target="_blank">留言</a>，立即处理]
-                            <br />
-                            <script type="text/javascript" src="/js/statistics.js"></script>
-                            <span id="statistic-times"></span>
-                            <br />
-                            {showVisitorCounter ? <div class="size-small"><span id="busuanzi_container_site_uv">
-                                ❤️感谢<strong>&nbsp;<span id="busuanzi_value_site_uv">99+</span>&nbsp;</strong>
-                            </span>小伙伴的
-                                <strong>&nbsp;<span id="busuanzi_value_site_pv">99+</span>&nbsp;</strong>次光临，查看💐<a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">主题源码</a>！❤️</div> : null}
+                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
+                            <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                            {showVisitorCounter ? <br /> : null}
+                            {showVisitorCounter ? <span id="busuanzi_container_site_uv"
+                                dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
                         </p>
                     </div>
                     <div class="level-end">
@@ -74,7 +66,6 @@ module.exports = cacheComponent(Footer, 'common.footer', props => {
     }
 
     return {
-        url_for: url_for,
         logo,
         logoUrl: url_for(logo),
         siteUrl: url_for('/'),

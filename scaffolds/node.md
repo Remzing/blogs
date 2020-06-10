@@ -1,17 +1,16 @@
 ---
-thumbnail: ‘http://static.nodejs.cn/_static/img/logo.svg’
+# thumbnail: ‘http://static.nodejs.cn/_static/img/logo.svg’
 title: {{ title }}
 date: {{ date }}
 tags:
-  - Node
+  - 随感
 categories: 
-  - Node
+  - 随感
 toc: true
 recommend: 1
 keywords: node javascript
 uniqueId: {{ date }}/{{ title }}.html
 ---
-# Node.js
 
 > 摘要
 > 

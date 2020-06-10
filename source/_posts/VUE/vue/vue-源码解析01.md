@@ -1,10 +1,9 @@
 ---
 title: vue源码解析01
 tags:
-  - VUE
+  - vue
 categories:
   - VUE
-  - sourceCode
 toc: true
 recommend: 1
 keywords: node
@@ -12,8 +11,6 @@ uniqueId: '2020-06-04 12:40:36/"vue源码解析01".html'
 abbrlink: ca5f2882
 date: 2020-06-04 12:40:36
 ---
-# vue源码解析01
-
 > 摘要
 > - 源码学习步骤：
 >

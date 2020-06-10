@@ -8,7 +8,6 @@ tags:
   - vue语法
 categories:
   - VUE
-  - VUE语法
 abbrlink: afc5d1b0
 date: 2020-05-27 10:48:49
 keywords:
@@ -17,8 +16,6 @@ thumbnail:
 > 摘要
 > 主要通过vue官方文档熟悉不常用的语法，查缺补漏
 > <!-- more -->
-
-# VUE 特殊 attribute
 
 ## key
 

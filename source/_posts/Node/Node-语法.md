@@ -5,7 +5,6 @@ tags:
   - Node
 categories:
   - Node
-  - Node语法
 toc: true
 recommend: 1
 keywords: node
@@ -13,7 +12,6 @@ uniqueId: '2020-05-28 05:51:57/"node-语法".html'
 abbrlink: ad389c01
 date: 2020-05-28 13:51:57
 ---
-# Node.js知识整理
 
 > 摘要
 > - 了解nodejs特点和应⽤场景,

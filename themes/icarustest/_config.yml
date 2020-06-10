@@ -1,11 +1,14 @@
+
 # Version of the configuration file
 version: 3.0.0
+# Icarus theme variant, can be "default" or "cyberpunk"
+variant: default
 # Path or URL to the website's logo
-logo: https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191121122803.png #https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191121115040.png
+logo: https://cdn.jsdelivr.net/gh/remzing/img/images/avatar.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@latest/img/wico.png
+    favicon: https://cdn.jsdelivr.net/gh/remzing/img/images/WechatIMG10.jpeg
     # Canonical URL of the current page
     canonical_url:
     # Open Graph metadata
@@ -13,25 +16,25 @@ head:
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: Remzing`s blog
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://Remzing.github.io/
         # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@latest/img/avatar.jpg
+        image: https://cdn.jsdelivr.net/gh/remzing/img/images/WechatIMG6.jpeg
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 辣椒の酱
+        site_name: 任勉之的博客
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: renyy
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
-        description: java,技术分享,后端开发,支付框架,数据接口,算法,leetcode
+        description: 前端开发,Node,serverless,技术分享,后端开发,支付框架,数据接口,算法,leetcode
         # Twitter card type (twitter:card)
         twitter_card:
         # Twitter ID (twitter:creator)
@@ -49,19 +52,19 @@ head:
     structured_data:
         # Page title (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: 任勉之的博客
         # Page description (optional)
         # You should leave this blank for most of the time
-        description: java,技术分享,后端开发,支付框架,数据接口,算法,leetcode
+        description: 前端开发,Node,serverless,技术分享,后端开发,支付框架,数据接口,算法,leetcode
         # Page URL (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://Remzing.github.io/
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: Remzing
         # Page images (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@latest/img/avatar.jpg
+        image: https://cdn.jsdelivr.net/gh/remzing/img/images/WechatIMG6.jpeg
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
@@ -77,31 +80,31 @@ navbar:
         归档: /archives
         分类: /categories
         标签: /tags
-        律法: /tags/法律/
-        影音: /media
-        相册: /album
-        友链: /friend
-        碎碎念: /self-talking
-        留言: /message
-        关于: /about
+        # 律法: /tags/法律/
+        # 影音: /media
+        # 相册: /album
+        # 友链: /friend
+        # 碎碎念: /self-talking
+        # 留言: /message
+        # 关于: /about
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif'
+            url: 'https://github.com/Remzing'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
-        Attribution 4.0 International:
-            icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+        # Creative Commons:
+        #     icon: fab fa-creative-commons
+        #     url: 'https://creativecommons.org/'
+        # Attribution 4.0 International:
+        #     icon: fab fa-creative-commons-by
+        #     url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif'
+            url: 'https://github.com/Remzing'
 # Article related configurations
 article:
     # Code highlight settings
@@ -114,7 +117,7 @@ article:
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
         fold: unfolded
     # Whether to show thumbnail image for every article
-    thumbnail: true
+    thumbnail: false
     # Whether to show estimated article reading time
     readtime: true
 # Search plugin configurations
@@ -123,18 +126,18 @@ search:
     type: insight
 
 # Donate plugin configurations
-donate:
+# donate:
     # Alipay donate button configurations
-    -
+    # -
         # Donation entry name
-        type: alipay
-        # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
-    -
+        # type: alipay
+        # # Qrcode image URL
+        # qrcode: 'https://raw.githubusercontent.com/Remzing/blog_image/master/img/2019/20190802135456.png'
+    # -
         # Donation entry name
-        type: wechat
-        # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
+        # type: wechat
+        # # Qrcode image URL
+        # qrcode: 'https://raw.githubusercontent.com/Remzing/blog_image/master/img/2019/20190802135550.png'
 #    -
 #    -
 #        type: patreon
@@ -154,10 +157,10 @@ donate:
 #        qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    type: sharejs
-    # URL to the ShareThis share plugin script
-    install_url: ''
+# share:
+#     type: sharejs
+#     # URL to the ShareThis share plugin script
+#     install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -173,59 +176,58 @@ sidebar:
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
     -
-            # Where should the widget be placed, left sidebar or right sidebar
-            position: left
-            type: toc
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: toc
     # Profile widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: profile
         # Author name
-        author: 辣椒の酱
+        author: Remzing
         # Title of the author to be shown in the profile widget
-        author_title: 尚未执佩剑，转眼即江湖
+        author_title: Coder
         # Author's current location to be shown in the profile widget
-        location: 阿尔及利亚
+        # location: 洛克萨斯
         # Path or URL to the avatar to be shown in the profile widget
-        avatar: https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@latest/img/avatar.jpg
+        avatar: https://cdn.jsdelivr.net/gh/remzing/img/images/WechatIMG6.jpeg
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
         gravatar:
         # URL or path for the follow button
-        follow_link: 'https://weibo.com/u/3050419984'
+        follow_link: 'https://github.com/Remzing'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/removeif'
-            Weibo:
-                icon: fab fa-weibo
-                url: 'https://weibo.com/u/3050419984'
+                url: 'https://github.com/Remzing'
+            # Weibo:
+            #     icon: fab fa-weibo
+            #     url: 'https://weibo.com/u/3050419984'
             Email:
                 icon: fa fa-envelope
-                url: 'mailto:removeif@163.com'
-            Next:
-                icon: fab fa-dribbble
-                url: 'https://removeif.github.io/remove.io'
+                url: 'mailto:346351229@qq.com'
+            # Next:
+            #     icon: fab fa-dribbble
+            #     url: 'https://Remzing.github.io/remove.io'
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
+        hasHitokoto: true #左边一言开关，true-开，false-关       
 
     # Recommendation links widget configurations
     # Table of contents widget configurations
     -
         position: right
         type: latest_comment
-#    -
-#        # Where should the widget be placed, left sidebar or right sidebar
-#        position: left
-#        type: links
-#        # Names and URLs of the sites
-#        links:
-#            Hexo: 'https://hexo.io'
-#            Bulma: 'https://bulma.io'
+    # Tags widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: tags
+    
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -234,27 +236,32 @@ widgets:
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: categories
     # Archives widget configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: right
+    #     type: archives
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: right
-        type: archives
-    # Tags widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: tags
+        type: links
+        # Names and URLs of the sites
+        links:
+            Hexo: 'https://hexo.io'
+            icarus: 'https://blog.zhangruipeng.me/hexo-theme-icarus/'
+            amazing: 'https://github.com/Remzing/hexo-theme-amazing/'
     # Google FeedBurner email subscription widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: subscribe_email
-        # Hint text under the email input
-        description: 输入邮箱开始订阅，更博后邮件通知！
-        # Feedburner ID
-        feedburner_id: removeifFeedsId
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     #TODO
+    #     position: right
+    #     type: subscribe_email
+    #     # Hint text under the email input
+    #     description: 输入邮箱开始订阅，更博后邮件通知！
+    #     # Feedburner ID
+    #     feedburner_id: RemzingFeedsId
     # Google AdSense unit configurations
 #    -
 #        # Where should the widget be placed, left sidebar or right sidebar
@@ -277,7 +284,7 @@ plugins:
         tracking_id:
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: true
+    # busuanzi: true
     # Enable the lightGallery and Justified Gallery plugins
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/gallery-plugin/
     gallery: true
@@ -304,30 +311,30 @@ plugins:
     progressbar: true
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
-providers:
-    # Name or URL template of the JavaScript and/or stylesheet CDN provider
-    cdn: jsdelivr
-    # Name or URL template of the webfont CDN provider
-    fontcdn: google
-    # Name or URL of the fontawesome icon font CDN provider
-    iconcdn: fontawesome
-    # https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v1.0.6/json_data/record.json
-    my_cdn_pre: https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v1.0.6
+# providers:
+#     # Name or URL template of the JavaScript and/or stylesheet CDN provider
+#     cdn: jsdelivr
+#     # Name or URL template of the webfont CDN provider
+#     fontcdn: google
+#     # Name or URL of the fontawesome icon font CDN provider
+#     iconcdn: fontawesome
+#     # https://cdn.jsdelivr.net/gh/Remzing/Remzing.github.io@v1.0.6/json_data/record.json, cdn前缀，对于hexo new page 页面中引用的资源文件不生效，需要手动改，如friend友链页中引用的资源
+#     my_cdn_pre: https://cdn.jsdelivr.net/gh/Remzing/Remzing.github.io@v2.2.1
 
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: gitalk
-    # Disqus shortname
-#    shortname: ''
-    owner: removeif         # (required) GitHub user name
-    repo: blog_comment          # (required) GitHub repository name
-    client_id: 46a9f3481b46ea0129d8     # (required) OAuth application client id
-    client_secret: 79c7c9cb847e141757d7864453bcbf89f0655b24 # (required) OAuth application client secret
-    admin: ['removeif']
-    create_issue_manually: true
-    distraction_free_mode: false
-    has_hot_recommend: true # 是否有热门推荐
-    has_latest_comment: true #是否有最新评论
+# comment:
+#     type: gitalk
+#     # Disqus shortname
+# #    shortname: ''
+#     owner: Remzing         # (required) GitHub user name
+#     repo: blog_comment          # (required) GitHub repository name
+#     client_id: 46a9f3481b46ea0129d8     # (required) OAuth application client id
+#     client_secret: 79c7c9cb847e141757d7864453bcbf89f0655b24 # (required) OAuth application client secret
+#     admin: ['Remzing']
+#     create_issue_manually: false
+#     distraction_free_mode: false
+#     has_hot_recommend: false # 是否有热门推荐
+#     has_latest_comment: false #是否有最新评论
 
-live2Dswitch: on #live2D开关 on 为打开
+live2Dswitch: off #live2D开关 on-开 off-关
