@@ -114,7 +114,7 @@ article:
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
         fold: unfolded
     # Whether to show thumbnail image for every article
-    thumbnail: true
+    thumbnail: false
     # Whether to show estimated article reading time
     readtime: true
 # Search plugin configurations
@@ -123,18 +123,18 @@ search:
     type: insight
 
 # Donate plugin configurations
-donate:
+# donate:
     # Alipay donate button configurations
-    -
+    # -
         # Donation entry name
-        type: alipay
-        # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
-    -
+        # type: alipay
+        # # Qrcode image URL
+        # qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
+    # -
         # Donation entry name
-        type: wechat
-        # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
+        # type: wechat
+        # # Qrcode image URL
+        # qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
 #    -
 #    -
 #        type: patreon
@@ -154,32 +154,32 @@ donate:
 #        qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    type: sharejs
-    # URL to the ShareThis share plugin script
-    install_url: ''
+# share:
+#     type: sharejs
+#     # URL to the ShareThis share plugin script
+#     install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: true
+        sticky: false
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: toc
     # Profile widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: profile
         # Author name
         author: Remzing
@@ -217,7 +217,7 @@ widgets:
     # Recommendation links widget configurations
     # Table of contents widget configurations
     -
-        position: right
+        position: left
         type: latest_comment
 #    -
 #        # Where should the widget be placed, left sidebar or right sidebar
@@ -230,22 +230,22 @@ widgets:
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: recent_posts
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: categories
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: tags
     # Google FeedBurner email subscription widget configurations
     # -

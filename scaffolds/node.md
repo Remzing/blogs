@@ -1,15 +1,17 @@
 ---
-thumbnail:
+thumbnail: ‘http://static.nodejs.cn/_static/img/logo.svg’
 title: {{ title }}
 date: {{ date }}
 tags:
+  - Node
 categories: 
+  - Node
 toc: true
 recommend: 1
-keywords: 
+keywords: node javascript
 uniqueId: {{ date }}/{{ title }}.html
 ---
-# 题
+# Node.js
 
 > 摘要
 > 

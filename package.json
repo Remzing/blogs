@@ -9,15 +9,17 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "dependencies": {
+    "acorn": ">=7.1.1",
     "ajv": "^6.10.2",
     "bulma-stylus": "0.8.0",
     "deepmerge": "^4.2.2",
-    "hexo": "^4.2.0",
+    "hexo": "^4.2.1",
     "hexo-abbrlink": "^2.0.5",
     "hexo-blog-encrypt": "^3.0.3",
+    "hexo-component-inferno": "^0.3.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
@@ -37,7 +39,6 @@
     "js-yaml": "^3.13.1",
     "moment": "^2.22.2",
     "save": "^2.4.0",
-    "semver": ">=5.0.0",
-    "acorn": ">=7.1.1"
+    "semver": ">=5.0.0"
   }
 }
