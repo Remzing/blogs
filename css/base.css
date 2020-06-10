@@ -11382,18 +11382,6 @@ hr {
 .level:not(:last-child) {
   margin-bottom: 0.5rem;
 }
-.post-navigation .level {
-  margin-bottom: 1rem;
-}
-.text-right {
-  text-align: right;
-}
-.text-left {
-  text-align: left;
-}
-.font1_1 {
-  font-size: 1.1rem;
-}
 .night {
   color: #c0c0c0 !important;
   background-color: #000;
@@ -11698,46 +11686,4 @@ hr {
 }
 .night .friend-card-item {
   color: unset;
-}
-.body_hot_comment .comment-content .card-comment-item .ava,
-.media-left,
-.is-6-widescreen .card-image {
-  display: none;
-}
-.card {
-  background-color: unset;
-}
-.navbar,
-footer.footer {
-  background-color: unset;
-}
-body:not(.night) .navbar:hover,
-body:not(.night) .footer:hover,
-body:not(.night) .card:hover,
-body:not(.night) .pagination:hover,
-body:not(.night) .post-navigation:hover {
-  background-color: #deeafb;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
-}
-.pagination,
-.post-navigation {
-  padding: 10px;
-  padding-top: 2rem;
-}
-.pagination .pagination-link:not(.is-current),
-.pagination .pagination-previous,
-.pagination .pagination-next {
-  background-color: rgba(255,255,255,0);
-}
-.timeline .media:last-child:after {
-  background: unset;
-}
-.footer {
-  box-shadow: 0px 4px 10px 10px rgba(0,0,0,0.05);
-  padding: 3rem 1.5rem 2rem;
-}
-@media screen and (max-width: 1087px) {
-  .navbar-menu {
-    background-color: unset;
-  }
 }
