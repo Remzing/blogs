@@ -1,0 +1,1 @@
+"use strict";$(function(){$.getJSON("../json_data/record.json",function(i){$.each(i,function(i,e){var t='<li class="time-axis-item"><div class="time-axis-date">'+e.date+'<span></span></div><div class="time-axis-title">'+e.title+'</div><p class="time-axis-achievement">'+e.achievement+"</p></li>";$(".time-axis").append(t)})})});
