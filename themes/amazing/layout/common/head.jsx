@@ -3,7 +3,7 @@ const MetaTags = require('../misc/meta');
 const OpenGraph = require('../misc/open_graph');
 const StructuredData = require('../misc/structured_data');
 const Plugins = require('./plugins');
-const {stripHTML} = require('hexo-util');
+const { stripHTML } = require('hexo-util');
 
 function getPageTitle(page, siteTitle, helper) {
     let title = page.title;
@@ -37,7 +37,10 @@ module.exports = class extends Component {
             meta_generator = true,
             head = {},
             article,
-            highlight
+            highlight,
+            has_live_2D_switch,
+            global_gray,
+            comment
         } = config;
         const {
             meta = [],
@@ -49,7 +52,6 @@ module.exports = class extends Component {
         } = head;
 
         const language = page.lang || page.language || config.language;
-
         let hlTheme, images;
         if (highlight && highlight.enable === false) {
             hlTheme = null;
@@ -98,6 +100,17 @@ module.exports = class extends Component {
             structuredImages = page.photos;
         }
 
+        const keywordsCon = (page.keywords || (page.tags && page.tags.length ? page.tags : undefined) || config.keywords);
+        const descCon = (page.description || stripHTML(page.excerpt) || open_graph.description || page.content || config.description);
+        const authorCon = (page.author || open_graph.author || config.author)
+        // head meta data
+        meta.push("name=keywords;content=" + keywordsCon);
+        meta.push("name=description;content=" + descCon);
+        meta.push("name=author;content=" + authorCon);
+
+        var hasLive2D = has_live_2D_switch == undefined || has_live_2D_switch;
+        var globalGray = global_gray != undefined && global_gray;
+        const isValineComment = comment != undefined && comment.type != undefined && comment.type == 'valine';
         return <head>
             <meta charset="utf-8" />
             {meta_generator ? <meta name="generator" content={`Hexo ${env.version}`} /> : null}
@@ -111,9 +124,9 @@ module.exports = class extends Component {
                 title={page.title || open_graph.title || config.title}
                 date={page.date}
                 updated={page.updated}
-                author={open_graph.author || config.author}
-                description={page.description || stripHTML(page.excerpt) || open_graph.description || page.content || config.description}
-                keywords={page.keywords || (page.tags && page.tags.length ? page.tags : undefined) || config.keywords}
+                author={authorCon}
+                description={descCon}
+                keywords={keywordsCon}
                 url={page.permalink || open_graph.url || url}
                 images={openGraphImages}
                 siteName={open_graph.site_name || config.title}
@@ -127,9 +140,9 @@ module.exports = class extends Component {
 
             {typeof structured_data === 'object' ? <StructuredData
                 title={page.title || structured_data.title || config.title}
-                description={page.description || stripHTML(page.excerpt) || structured_data.description || page.content || config.description}
+                description={descCon}
                 url={page.permalink || structured_data.url || url}
-                author={structured_data.author || config.author}
+                author={authorCon}
                 date={page.date}
                 updated={page.updated}
                 images={structuredImages} /> : null}
@@ -142,12 +155,16 @@ module.exports = class extends Component {
             {hlTheme ? <link rel="stylesheet" href={cdn('highlight.js', '9.12.0', 'styles/' + hlTheme + '.css')} /> : null}
             <Plugins site={site} config={config} helper={helper} page={page} head={true} />
             <link rel="stylesheet" href={my_cdn(url_for('/css/style.css'))} />
+            {globalGray ? <link rel="stylesheet" href={url_for('/css/global_gray.css')} /> : null}
             <script src={cdn('jquery', '3.3.1', 'dist/jquery.min.js')}></script>
             <script src={my_cdn(url_for('/js/globalUtils.js'))}></script>
             {adsenseClientId ? <script data-ad-client={adsenseClientId}
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async={true}></script> : null}
-            {config.live2Dswitch == 'on' ? <link rel="stylesheet" href={my_cdn(url_for('/live2d/waifu.css'))} /> : null}
-            {config.live2Dswitch == 'on' ? <script type="text/javascript" async={true} src={my_cdn(url_for('/live2d/autoload.js'))}></script> : null}
+            {hasLive2D ? <link rel="stylesheet" href={my_cdn(url_for('/live2d/waifu.css'))} /> : null}
+            {hasLive2D ? <script type="text/javascript" async={true} src={my_cdn(url_for('/live2d/autoload.js'))}></script> : null}
+            {isValineComment ? <script async="" referrerpolicy="no-referrer" src="//cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js"></script> : null}
+            {isValineComment ? <script src="//unpkg.com/valine/dist/Valine.min.js"></script> : null}
+            {isValineComment ? <script src={my_cdn(url_for('/js/md5.min.js'))}></script> : null}
 
         </head>;
     }

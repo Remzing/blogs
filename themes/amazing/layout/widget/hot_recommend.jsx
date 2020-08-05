@@ -3,32 +3,33 @@ const { cacheComponent } = require('../util/cache');
 
 class HotRecommend extends Component {
     render() {
-        const { isReturn } = this.props;
-        //TODO
-        return null
+        const { isReturn, title, tip } = this.props;
+
         if (!isReturn) {
             return null
         }
 
         return <div class="card widget">
             <div class="card-content">
-                <h3 class="menu-label">热门推荐</h3><span id="index_hot_div">加载中，稍等几秒...</span>
+                <h3 class="menu-label">{title}</h3><span id="index_hot_div">{tip}</span>
             </div>
         </div>
     }
 }
 
 module.exports = cacheComponent(HotRecommend, 'widget.hotrecommend', props => {
-    const { config } = props;
+    const { config, helper } = props;
+    const { __ } = helper;
     const { comment } = config;
 
-
-    if (comment.type == 'undefined' || comment.type != 'gitalk'
+    if (comment == undefined || comment.type == undefined || comment.type == 'undefined' || comment.type != 'gitalk'
         || !comment.has_hot_recommend) {
         return null
     }
 
     return {
-        isReturn: true
+        isReturn: true,
+        title: __('widget.hot_recommend'),
+        tip: __('widget.hot_recommend_tip')
     };
 });

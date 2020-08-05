@@ -8,6 +8,7 @@ branches:
     - hexoPrj # build master branch only
 script:
   - hexo generate # generate static files
+  - npx gulp # yasuo
 deploy:
   provider: pages
   skip-cleanup: true

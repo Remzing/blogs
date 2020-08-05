@@ -11,3 +11,11 @@
 3. 清除npm缓存： 执行 `npm cache clean --force`     (??? `npm cache verify`)
 4. 确保以上都执行成功之后，重新执行 `npm install`
 
+
+
+
+
+### npm ERR! Invaild dependency type requested: alias 
+
+
+

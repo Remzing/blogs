@@ -1,7 +1,16 @@
 ---
-abbrlink: f23196db
+title: Docker 使用
+tags:
+  - Docker
+categories:
+  - DevOps
+toc: true
+recommend: 1
+keywords: css
+uniqueId: '2020-05-28 05:51:57/"Docker-使用".html'
+abbrlink: be9543fe
+date: 2020-05-28 13:51:57
 ---
-## Docker 使用
 
 什么是Docker?根据官网描述，我们可以得知，[Docker](https://link.zhihu.com/?target=https%3A//www.docker.com/what-docker)是一个软件/容器平台，使用了虚拟化技术(cgroups，namespaces)来实现操作系统的资源隔离和限制，对于开发人员来说，容器技术为应用的部署提供了沙盒环境，我们可以在独立的容器运行和管理应用程序进程，Docker提供的抽象层使得开发人员之间可以保持开发环境相对的一致，避免了冲突。
 

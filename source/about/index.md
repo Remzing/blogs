@@ -1,3 +1,8 @@
+---
+# thumbnail: http://wx3.sinaimg.cn/large/b5d1b710ly1g6s7hn2aycj212w0k0dx5.jpg
+date: 2020-08-05 23:24:36
+comments: false
+---
 #### 个人简介
 
 

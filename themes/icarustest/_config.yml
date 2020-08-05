@@ -219,9 +219,9 @@ widgets:
 
     # Recommendation links widget configurations
     # Table of contents widget configurations
-    -
-        position: right
-        type: latest_comment
+    # -
+    #     position: right
+    #     type: latest_comment
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -311,15 +311,15 @@ plugins:
     progressbar: true
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
-# providers:
+providers:
 #     # Name or URL template of the JavaScript and/or stylesheet CDN provider
-#     cdn: jsdelivr
+    cdn: jsdelivr
 #     # Name or URL template of the webfont CDN provider
 #     fontcdn: google
 #     # Name or URL of the fontawesome icon font CDN provider
 #     iconcdn: fontawesome
 #     # https://cdn.jsdelivr.net/gh/Remzing/Remzing.github.io@v1.0.6/json_data/record.json, cdn前缀，对于hexo new page 页面中引用的资源文件不生效，需要手动改，如friend友链页中引用的资源
-#     my_cdn_pre: https://cdn.jsdelivr.net/gh/Remzing/Remzing.github.io@v2.2.1
+    my_cdn_pre: https://cdn.jsdelivr.net/gh/Remzing/Remzing.github.io@v2.2.1
 
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
