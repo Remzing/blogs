@@ -1,16 +1,21 @@
 ---
-title: Docker 使用
+title: Docker-使用
 tags:
-  - Docker
+  - 随感
 categories:
-  - DevOps
+  - 随感
 toc: true
 recommend: 1
-keywords: css
-uniqueId: '2020-05-28 05:51:57/"Docker-使用".html'
-abbrlink: be9543fe
-date: 2020-05-28 13:51:57
+keywords: node javascript
+uniqueId: '2020-08-05 16:28:08/"Docker-使用".html'
+abbrlink: df42223e
+date: 2020-08-06 00:28:08
 ---
+
+> 摘要
+> 
+> <!-- more -->
+
 
 什么是Docker?根据官网描述，我们可以得知，[Docker](https://link.zhihu.com/?target=https%3A//www.docker.com/what-docker)是一个软件/容器平台，使用了虚拟化技术(cgroups，namespaces)来实现操作系统的资源隔离和限制，对于开发人员来说，容器技术为应用的部署提供了沙盒环境，我们可以在独立的容器运行和管理应用程序进程，Docker提供的抽象层使得开发人员之间可以保持开发环境相对的一致，避免了冲突。
 
@@ -45,7 +50,7 @@ systemctl restart docker.service
 $ docker run -d --name=web -p 8080:80 nginx:latest
 ```
 
-这条命令表示Docker基于nginx:alpine这个Docker镜像，创建一个名称为web的容器，并把容器内部的80端口与宿主机上的8080端口做映射，使得通过宿主机8080端口的流量转发到容器内部的80端口上。
+这条命令表示Docker基于nginx:alpine这个Docker镜像，创建一个名称为web的容器，并把容器内部的80端口与宿主机上的8080端口做映射，使得通过宿主机8080端口的流量转发到容器内部的80端口上。 
 
 如果安装的时候提示 `Unable to find image 'nginx:latest' locally`，这是本地没有这个镜像，它会自动下载，但是没有配置过镜像源的话，默认国外镜像源地址，长时间下载不下来就需要翻墙或者配置镜像源地址， 需要我们为docker设置国内阿里云的镜像加速器或选择其他镜像加速器；
 

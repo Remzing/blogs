@@ -90,7 +90,7 @@ module.exports = class extends Component {
                     <div class="content" dangerouslySetInnerHTML={{ __html: index && page.excerpt ? page.excerpt : page.content }}></div>
                     {index && indexShowTagsCat ? <div class="index-category-tag">
                         {/* categories */}
-                        {page.categories && page.categories.length ? <div class="level-item">
+                        {/* {page.categories && page.categories.length ? <div class="level-item">
                             {(() => {
                                 const categories = [];
                                 categories.push(<i class="fas fa-folder-open has-text-grey">&nbsp;</i>)
@@ -103,9 +103,9 @@ module.exports = class extends Component {
                                 return categories;
                             })()}
                         </div> : null}
-                        &nbsp;&nbsp;
+                        &nbsp;&nbsp; */}
                         {/* tags */}
-                        {page.tags && page.tags.length ?
+                        {/* {page.tags && page.tags.length ?
                             <div class="level-item">
                                 {(() => {
                                     const tags = [];
@@ -119,7 +119,7 @@ module.exports = class extends Component {
                                     return tags;
                                 })()}
                             </div> : null}
-                            <hr />
+                            <hr /> */}
                     </div> : null}
                     {/* "Read more" button ・ */}
                     {index && page.excerpt ?

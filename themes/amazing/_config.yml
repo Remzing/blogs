@@ -248,14 +248,14 @@ widgets:
         position: right
         type: tags
     # Google FeedBurner email subscription widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: subscribe_email
-        # Hint text under the email input
-        description: 输入邮箱开始订阅，更博后邮件通知！
-        # Feedburner ID
-        feedburner_id: removeifFeedsId
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: right
+    #     type: subscribe_email
+    #     # Hint text under the email input
+    #     description: 输入邮箱开始订阅，更博后邮件通知！
+    #     # Feedburner ID
+    #     feedburner_id: removeifFeedsId
     # Google AdSense unit configurations
 #    -
 #        # Where should the widget be placed, left sidebar or right sidebar
@@ -364,7 +364,7 @@ global_gray: false #true 全局灰色，特定时期可以开启，false-不开�
 
 has_banner: false #首页是否有banner，true-是，false-否，如果配置了热门推荐显示热门推荐，banner配置数据在json_data/banner.json里按照配置格式配置好，至少三条
 
-has_latest_modify_time: true #是否显示最后修改时间 true开启，false-关闭   
+has_latest_modify_time: false #是否显示最后修改时间 true开启，false-关闭   
 
 busuanzi_only_count: false #当上面plugins中busuanzi: true时，此配置busuanzi_only_count为true时，网站不显示不蒜子统计数据，但是会每次统计。false时显示统计数据。
 
@@ -381,8 +381,8 @@ has_copyright: false # 文中是否显示copyright true开启，false-关闭
 
 has_live_2D_switch: false #live2D开关 true-开 false-关
 
-side_music_netease_id: 2364053447 #侧边栏网易云歌单id
+# side_music_netease_id: 2364053447 #侧边栏网易云歌单id
 
-use_pjax: false #是否开启pjax，false-不开启，true-开启，开启后局部更新网页信息，切换页面背景音乐不间断等特性
+# use_pjax: false #是否开启pjax，false-不开启，true-开启，开启后局部更新网页信息，切换页面背景音乐不间断等特性
 
 # index_show_tags_cateories: true #首页文章item面板是否显示tag和categories
